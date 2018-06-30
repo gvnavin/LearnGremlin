@@ -1,0 +1,28 @@
+group 'LearnGremlin'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    // https://mvnrepository.com/artifact/org.apache.tinkerpop/gremlin-core
+    compile group: 'org.apache.tinkerpop', name: 'gremlin-core', version: '3.3.3'
+
+    // https://mvnrepository.com/artifact/org.apache.tinkerpop/tinkergraph-gremlin
+    testCompile group: 'org.apache.tinkerpop', name: 'tinkergraph-gremlin', version: '3.3.3'
+
+    // https://mvnrepository.com/artifact/org.apache.tinkerpop/gremlin-driver
+    compile group: 'org.apache.tinkerpop', name: 'gremlin-driver', version: '3.3.3'
+
+    // https://mvnrepository.com/artifact/com.squareup/javapoet
+    compile group: 'com.squareup', name: 'javapoet', version: '1.9.0'
+
+
+}
